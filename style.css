@@ -1,1 +1,33 @@
+body{
+	background-color: black;
+	color: white;
+  font-family: 'Dosis', sans-serif;
+	}
+
+.Title {
+  text-align:center;
+  border-bottom:2px whie 
+	}
+
+.CTemp, .sevDay, .currentCity{
+	text-align:center;
+	font-size:25px;
+	background-color: blue;
+	border: 2px solid white;
+	border-radius: 10px;
+
+	}
+
+input{position:relative;
+	padding: 10px;
+	border-radius: 10px;
+	}
+
+
+#CTempResult, #sevDayResult, #cCity{text-align: center;
+	font-size:25px;
+	background-color: red;
+	border: 2px solid white;
+	border-radius: 10px;
+	}
 
