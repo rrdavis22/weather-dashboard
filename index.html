@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!--https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en-->
+
+<html>
+	<head>
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <title>Weather Dashboard</title>
+	</head>
+	<body ng-app="weatherApp">
+  <h1 class="Title"> Weather App</h1>
+		<hr/>
+		<div ng-controller="forecastControl">
+			<div align="center">
+				<input id="Search" type="text" placeholder="Enter a City" ng-model="cityID" ng-model-options="{debounce: 350}">
+			</div>
+			<h3 class="currentCity">Current City: </h3>	
+			<p id="cCity">{{cCity}}</p>	
+			<h3 class="CTemp">Current Temp:</h3>
+			<p id="CTempResult">{{currentDay}} - {{currentTemp}} &#8457</p>
+			<h3 class="sevDay">6 Day Forecast:</h3>
+			<div id=sevDayResult>	
+				<p>{{day1}} - Max Temp: {{d1maxTemp}} &#8457, Min Temp: {{d1minTemp}} &#8457</p>
+				<p>{{day2}} - Max Temp: {{d2maxTemp}} &#8457, Min Temp: {{d2minTemp}} &#8457</p>
+				<p>{{day3}} - Max Temp: {{d3maxTemp}} &#8457, Min Temp: {{d3minTemp}} &#8457</p>
+				<p>{{day4}} - Max Temp: {{d4maxTemp}} &#8457, Min Temp: {{d4minTemp}} &#8457</p>
+				<p>{{day5}} - Max Temp: {{d5maxTemp}} &#8457, Min Temp: {{d5minTemp}} &#8457</p>
+				<p>{{day6}} - Max Temp: {{d6maxTemp}} &#8457, Min Temp: {{d6minTemp}} &#8457</p>
+			</div>
+			<br/>
+		</div>
+	</body>
+</html>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
 
